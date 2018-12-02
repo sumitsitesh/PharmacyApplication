@@ -1,0 +1,104 @@
+
+  <div >
+    <div class="hdrbg"> 
+    <h1 class="hdr">Wipro Pharmacy store</h1>
+  </div>
+      <div class="example-container">
+          <form class="example-form">
+        <mat-form-field>
+          <input matInput placeholder="Name" name="name" [(ngModel)]="name" [value]="name">
+        </mat-form-field>
+        &nbsp;
+
+        <mat-form-field>
+            <input matInput placeholder="Manufacturer"  name="Manufacturer" [(ngModel)]="Manufacturer" [value]="Manufacturer">
+          </mat-form-field>
+          &nbsp;
+        <mat-form-field>
+            <input matInput placeholder="Expiration Date" name="ExpDate"  [(ngModel)]="ExpDate" [value]="ExpDate">
+          </mat-form-field>
+          &nbsp;
+        <mat-form-field>
+            <input matInput placeholder="Price" name="Price" [(ngModel)]="Price" [value]="Price">
+          </mat-form-field>
+          &nbsp;
+        <mat-form-field>
+          <mat-select  placeholder="Select"  name="type" [(ngModel)]="type" [value]="type">
+            <mat-option *ngFor="let acc of medicineType"  [value]="acc.type">{{acc.type}}</mat-option>
+          </mat-select>
+        </mat-form-field>
+        <button class="updtbtn" mat-raised-button color="primary" (click)="updateMedicine()">Update</button>
+        </form>
+      </div>
+      <div  >
+      <button class ="addbtn" mat-raised-button color="primary" (click)="addMedicine()">ADD Medicine</button>
+     
+      </div>
+    </div>
+
+<!-- table  -->
+<div class="table_class col-xs-12 mt20 no_pad pull-left " >	
+  <table class="geo_table col-xs-12">
+              <thead>
+                <tr>
+                  <th class = "tblrow">Name</th>
+                  <th class = "tblrow">Manufacturer</th>
+                  <th class = "tblrow">Expiration Date</th>
+                  <th class = "tblrow">Price</th>
+                  <th class = "tblrow">Type</th>
+                  <th class = "tblrow">Edit</th>
+                  <th class = "tblrow">Delete</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let mdcn of Medicines">
+                  <td class="tbldata">{{mdcn.name}}</td>
+                  <td class="tbldata">{{mdcn.manufacturer}}</td>
+                  <td class="tbldata">{{mdcn.ExpDate}}</td>
+                  <td class="tbldata">{{mdcn.Price}}</td>
+                  <td class="tbldata">{{mdcn.type}}</td>
+                  <td class="tbldata">
+                      <button mat-raised-button class="edtbtn" (click)="EditMedicine(mdcn)">Edit</button>
+                  </td>
+                  <td class="tbldata">
+                      <button mat-raised-button class="dltbtn" (click)="deleteMedicine(mdcn)">Delete</button>
+                  </td>
+                </tr>
+  
+              </tbody>
+            </table>
+  </div>
+  <!-- <table class="table table-striped">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">First</th>
+          <th scope="col">Last</th>
+          <th scope="col">Handle</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Mark</td>
+          <td>Otto</td>
+          <td>@mdo</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Jacob</td>
+          <td>Thornton</td>
+          <td>@fat</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>Larry</td>
+          <td>the Bird</td>
+          <td>@twitter</td>
+        </tr>
+      </tbody>
+    </table> -->
+ 
+    
+   
+    

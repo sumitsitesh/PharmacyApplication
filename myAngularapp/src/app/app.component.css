@@ -1,0 +1,12 @@
+.example-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .example-container > * {
+    width: 100%;
+  }
+  .mat-form-field-appearance-outline .mat-form-field-infix .mat-input-element { 
+    position: relative; 
+    bottom: .25em; 
+  }

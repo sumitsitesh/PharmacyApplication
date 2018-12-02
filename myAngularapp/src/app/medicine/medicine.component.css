@@ -1,0 +1,70 @@
+.hdrbg{
+  background: #40ff4f;
+  margin-top: -18px;
+}
+.hdr{
+  text-align: center;
+  text-decoration: underline;
+}
+.edtbtn{
+  background: #40ff4f;
+}
+.dltbtn{
+  background: #ff0000
+}
+.tblrow{
+  font-size: 16px;
+}
+.tbldata{
+  text-align: center;
+  font-size: 14px;
+}
+.addbtn{
+  float: right;
+  background: #40ff4f;
+  margin-top: -54px;
+  margin-right: 109px;
+}
+.updtbtn{
+  margin-left: 69px;
+  background: #40ff4f;
+}
+table {
+    width: 100%;
+  }
+
+  .mt20{
+    margin-top: 20px;
+  }
+  .no_pad{
+    padding-left:0 !important;
+    padding-right: 0 !important; 
+  }
+  .geo_table thead{
+    background: #40ff4f;
+    color: #ffffffd1;
+}
+.geo_table th {
+	font-size: 16px;
+} 
+
+.geo_table tr{
+    background: #cccbcb54;
+    font-size: 11px;
+ 
+}
+.geo_table th,td{
+	   padding: 6px 7px 5px 15px;
+}
+/* .example-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.example-container > * {
+  width: 100%;
+}
+.mat-form-field-appearance-outline .mat-form-field-infix .mat-input-element { 
+  position: relative; 
+  bottom: .25em; 
+} */
